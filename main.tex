@@ -1,0 +1,45 @@
+\documentclass{exam}
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{braket}
+\usepackage{forloop}
+\usepackage{amsthm}
+\usepackage[backend=biber]{biblatex}
+
+\theoremstyle{plain}
+\newtheorem{assumption}{Assumption}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\newtheorem{lemma}{Lemma}
+
+\input{preamble.sty}
+
+\addbibresource{references.bib}
+
+\begin{document}
+
+\title{MAT250S25 Proof 1}
+\author{Kishan S Patel}
+\maketitle
+
+Let \Rn n,\Rn m be Euclidean spaces.
+
+Let $T:\Rn m\to\Rn n$ be a linear transformation with corresponding $n\timesm$ matrix $A$.
+
+Let  $\vec x_1, \vec x_2, \dots, \vec x_k \in \Rn m$ be vectors such that the set of vectors
+$\set{T(\vec x_1), T(\vec x_2), \dots, T(\vec x_k)}$ is linearly independent.
+
+\noindent \rule{\textwidth}{1pt}
+\linebreak
+
+Prove that the set of vectors $\set{\vec x_1, \vec x_2, \dots, \vec x_k}$ is linearly independent.
+
+\renewcommand\qedsymbol{QED}
+
+\input{proof.tex}
+
+\end{document}
