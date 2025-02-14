@@ -22,19 +22,28 @@
 
 \begin{document}
 
-\title{MAT250S25 Proof 1}
+\title{MAT250S25 Proof 2}
 \author{Kishan S Patel}
 \maketitle
 
-Let \Rn n,\Rn m be Euclidean spaces.
+\begin{definition}[$\mathcal L_1$, from the \textbf{Big Thereom}\textsuperscript{\texttrademark}]
+	A set of vectors is linearly dependent if and only if it is injective
+\end{definition}
 
-Let $T:\Rn m\to\Rn n$ be a linear transformation with corresponding $n\timesm$ matrix $A$.
+\begin{definition}[$\mathcal L_2$, from the \textbf{Big Thereom}\textsuperscript{\texttrademark}]
+	A set of vectors $\set{\vec x_1, \vec x_2, \dots, \vec x_k}$ is linearly dependent if and only if:
+	$$
+		\mat{\vec x_1 & \vec x_2 & \cdots & \vec x_k}\vec b  = \vec 0 \iff \vec b = \vec 0
+	$$
+\end{definition}
 
-Let  $\vec x_1, \vec x_2, \dots, \vec x_k \in \Rn m$ be vectors such that the set of vectors
-$\set{T(\vec x_1), T(\vec x_2), \dots, T(\vec x_k)}$ is linearly independent.
-
-\noindent \rule{\textwidth}{1pt}
-\linebreak
+Given:
+\begin{itemize}
+	\item $\llet \R^n$,$\R^m$ be Euclidean spaces.
+	\item $\llet T:\R^m\to\R^ n$ be a linear transformation with corresponding $n\times m$ matrix $A$.
+	\item $\llet \vec x_1, \vec x_2, \dots, \vec x_k \in \R^ m$ be vectors such that the set of vectors
+	\item $\set{T(\vec x_1), T(\vec x_2), \dots, T(\vec x_k)}$ is linearly independent.
+\end{itemize}
 
 Prove that the set of vectors $\set{\vec x_1, \vec x_2, \dots, \vec x_k}$ is linearly independent.
 
